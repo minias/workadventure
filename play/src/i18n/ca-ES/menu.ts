@@ -79,6 +79,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'En canviar a una altra finestra o pestanya, WorkAdventure passa al "mode no present", excepte durant una conversa o una emissió.',
             cameraToggle: 'Mantenir la càmera activa en "mode no present"',
             microphoneToggle: 'Mantenir el micròfon actiu en "mode no present"',
+            awayStatusToggle: "Mostra l'estat Absent en el mode absent",
         },
         save: "Guardar",
         otherSettings: "Altres configuracions",

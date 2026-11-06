@@ -78,6 +78,7 @@ const menu: BaseTranslation = {
                 'Ao mudar para outra janela ou aba, o WorkAdventure muda para o "modo ausente", exceto durante uma conversa ou uma transmissão.',
             cameraToggle: 'Mantenha a câmera ativa no "modo ausente"',
             microphoneToggle: 'Mantenha o microfone ativo no "modo ausente"',
+            awayStatusToggle: "Mostrar o status Ausente no modo ausente",
         },
         save: "Salvar",
         otherSettings: "Outras configurações",

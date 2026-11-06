@@ -35,6 +35,7 @@ const cacheAPIIndex = "workavdenture-cache";
 const userProperties = "user-properties";
 const cameraPrivacySettings = "cameraPrivacySettings";
 const microphonePrivacySettings = "microphonePrivacySettings";
+const awayStatusOnBlur = "awayStatusOnBlur";
 const emojiFavorite = "emojiFavorite";
 const speakerDeviceId = "speakerDeviceId";
 const ignoredNewMediaDeviceIdsKey = "ignoredNewMediaDeviceIds";
@@ -584,6 +585,15 @@ class LocalUserStore {
             return defaultMicrophonePrivacySettings;
         }
         return storedValue === "true";
+    }
+
+    setAwayStatusOnBlur(option: boolean) {
+        localStorage.setItem(awayStatusOnBlur, option.toString());
+    }
+
+    /** Whether "away mode" (window/tab not focused) also shows the AWAY status. Defaults to false. */
+    getAwayStatusOnBlur(): boolean {
+        return localStorage.getItem(awayStatusOnBlur) === "true";
     }
 
     getAllUserProperties(context: string): Map<string, PlayerVariable> {

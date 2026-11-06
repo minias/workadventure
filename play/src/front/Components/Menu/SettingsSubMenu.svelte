@@ -23,6 +23,7 @@
     import { screenShareQualityStore } from "../../Stores/ScreenSharingStore";
     import { volumeProximityDiscussionStore } from "../../Stores/PeerStore";
     import { bandwidthConstrainedPreferenceStore } from "../../Stores/BandwidthConstrainedPreferenceStore";
+    import { awayStatusOnBlurStore } from "../../Stores/AwayStatusOnBlurStore";
     import { settingsSubMenuTargetStore } from "../../Stores/MenuStore";
     import {
         browserNoiseSuppressionSupportedStore,
@@ -91,6 +92,7 @@
 
     let previewCameraPrivacySettings = $state((() => valueCameraPrivacySettings)());
     let previewMicrophonePrivacySettings = $state((() => valueMicrophonePrivacySettings)());
+    let valueAwayStatusOnBlur = $state(localUserStore.getAwayStatusOnBlur());
 
     let valueBubbleSound = $state(localUserStore.getBubbleSound());
     let videoQualityStats = $state(localUserStore.getDisplayVideoQualityStats());
@@ -287,6 +289,10 @@
             previewCameraPrivacySettings = valueCameraPrivacySettings;
             localUserStore.setCameraPrivacySettings(valueCameraPrivacySettings);
         }
+    }
+
+    function changeAwayStatusOnBlur() {
+        awayStatusOnBlurStore.setValue(valueAwayStatusOnBlur);
     }
 
     function changeMicrophonePrivacySettings() {
@@ -718,6 +724,15 @@
                 bind:value={valueMicrophonePrivacySettings}
                 onchange={changeMicrophonePrivacySettings}
                 label={$LL.menu.settings.privacySettings.microphoneToggle()}
+            />
+        </div>
+
+        <div class="flex cursor-pointer items-center relative m-4">
+            <InputSwitch
+                id="away-status-toggle"
+                bind:value={valueAwayStatusOnBlur}
+                onchange={changeAwayStatusOnBlur}
+                label={$LL.menu.settings.privacySettings.awayStatusToggle()}
             />
         </div>
     </section>

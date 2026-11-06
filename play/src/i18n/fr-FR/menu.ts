@@ -79,6 +79,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'Quand vous passez à une autre fenêtre ou à un autre onglet, WorkAdventure passe en "mode absent", sauf pendant une conversation ou une diffusion.',
             cameraToggle: 'Garder la caméra activée en "mode absent"',
             microphoneToggle: 'Garder le microphone activé en "mode absent"',
+            awayStatusToggle: "Afficher le statut Absent en mode absent",
         },
         save: "Sauvegarder",
         fullscreen: "Plein écran",

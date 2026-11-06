@@ -77,6 +77,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 "別のウィンドウやタブに切り替えると、WorkAdventure は離席モードに切り替わります（会話中や配信中を除く）。",
             cameraToggle: "離席モードでカメラをアクティブに保つ",
             microphoneToggle: "離席モードでマイクをアクティブに保つ",
+            awayStatusToggle: "離席モードでステータスを「離席中」と表示",
         },
         save: "保存",
         otherSettings: "その他の設定",

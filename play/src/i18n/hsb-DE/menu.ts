@@ -78,6 +78,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'Hdyž do druheho wokna abo taba přeńdźeće, so do „modusa njepřitomnosće" přešaltuje, nic pak w rozmołwje abo při wusyłanju.',
             cameraToggle: 'Kameru w „modusu njepřitomnosće" aktiwěrowanu wostajić.',
             microphoneToggle: 'Mikrofon w „modusu njepřitomnosće" aktiwěrowany wostajić.',
+            awayStatusToggle: 'Show the "Away" status in "away mode"',
         },
         save: "składować",
         otherSettings: "Druhe nastajenja",

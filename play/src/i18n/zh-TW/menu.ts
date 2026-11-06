@@ -74,6 +74,7 @@ const menu: DeepPartial<Translation["menu"]> = {
             explanation: "當您切換到其他視窗或分頁時，WorkAdventure 會切換到「離開模式」（對話或直播期間除外）。",
             cameraToggle: "在「離開模式」中保持攝影機開啟",
             microphoneToggle: "在「離開模式」中保持麥克風開啟",
+            awayStatusToggle: "在離開模式下顯示「離開」狀態",
         },
         save: "儲存",
         otherSettings: "其他設定",

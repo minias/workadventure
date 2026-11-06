@@ -76,6 +76,7 @@ const menu: BaseTranslation = {
                 'When you switch to another window or tab, WorkAdventure switches to "away mode", except during a conversation or a broadcast.',
             cameraToggle: 'Keep camera active in "away mode"',
             microphoneToggle: 'Keep microphone active in "away mode"',
+            awayStatusToggle: 'Show the "Away" status in "away mode"',
         },
         save: "Save",
         otherSettings: "Other settings",
