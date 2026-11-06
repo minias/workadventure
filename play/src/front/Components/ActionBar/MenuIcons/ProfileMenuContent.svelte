@@ -58,6 +58,8 @@
         AvailabilityStatus.ONLINE,
         AvailabilityStatus.BUSY,
         AvailabilityStatus.BACK_IN_A_MOMENT,
+        AvailabilityStatus.EATING,
+        AvailabilityStatus.ON_THE_PHONE,
         AvailabilityStatus.DO_NOT_DISTURB,
     ];
 

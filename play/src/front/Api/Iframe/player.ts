@@ -324,13 +324,17 @@ export class WorkadventurePlayerCommands extends IframeApiContribution<Workadven
      * - "BUSY": Indicate the player is busy
      * - "DO_NOT_DISTURB": Indicate the player does not want to be disturbed
      * - "BACK_IN_A_MOMENT": Indicate the player is temporarily away
+     * - "EATING": Indicate the player is having a meal
+     * - "ON_THE_PHONE": Indicate the player is on a phone call
      *
      * {@link https://docs.workadventu.re/map-building/api-player.md#set-the-status-of-the-player | Website documentation}
      *
-     * @param {string} status The status to set. Allowed values: "ONLINE", "BUSY", "DO_NOT_DISTURB", "BACK_IN_A_MOMENT"
+     * @param {string} status The status to set. Allowed values: "ONLINE", "BUSY", "DO_NOT_DISTURB", "BACK_IN_A_MOMENT", "EATING", "ON_THE_PHONE"
      * @returns {void}
      */
-    public setStatus(status: "ONLINE" | "BUSY" | "DO_NOT_DISTURB" | "BACK_IN_A_MOMENT"): void {
+    public setStatus(
+        status: "ONLINE" | "BUSY" | "DO_NOT_DISTURB" | "BACK_IN_A_MOMENT" | "EATING" | "ON_THE_PHONE",
+    ): void {
         sendToWorkadventure({
             type: "setStatus",
             data: { status },

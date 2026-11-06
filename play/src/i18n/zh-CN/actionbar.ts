@@ -56,6 +56,8 @@ const actionbar: DeepPartial<Translation["actionbar"]> = {
         ONLINE: "在线",
         AWAY: "离开",
         BACK_IN_A_MOMENT: "马上回来",
+        EATING: "用餐中",
+        ON_THE_PHONE: "通话中",
         DO_NOT_DISTURB: "请勿打扰",
         BUSY: "忙碌",
         OFFLINE: "离线",

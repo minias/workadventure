@@ -10,6 +10,8 @@ export const ExtensionModuleStatusSynchronization = {
         if (
             status === AvailabilityStatus.BUSY ||
             status === AvailabilityStatus.BACK_IN_A_MOMENT ||
+            status === AvailabilityStatus.EATING ||
+            status === AvailabilityStatus.ON_THE_PHONE ||
             status === AvailabilityStatus.DO_NOT_DISTURB
         ) {
             resetAllStatusStoreExcept(status);

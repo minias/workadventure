@@ -10,6 +10,10 @@ export const requestedStatusFactory = {
                 return AvailabilityStatus.DO_NOT_DISTURB;
             case AvailabilityStatus.BACK_IN_A_MOMENT:
                 return AvailabilityStatus.BACK_IN_A_MOMENT;
+            case AvailabilityStatus.EATING:
+                return AvailabilityStatus.EATING;
+            case AvailabilityStatus.ON_THE_PHONE:
+                return AvailabilityStatus.ON_THE_PHONE;
             default:
                 return null;
         }

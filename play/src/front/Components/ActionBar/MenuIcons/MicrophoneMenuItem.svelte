@@ -25,6 +25,8 @@
             $availabilityStatusStore === AvailabilityStatus.BUSY ||
             $availabilityStatusStore === AvailabilityStatus.AWAY ||
             $availabilityStatusStore === AvailabilityStatus.BACK_IN_A_MOMENT ||
+            $availabilityStatusStore === AvailabilityStatus.EATING ||
+            $availabilityStatusStore === AvailabilityStatus.ON_THE_PHONE ||
             $availabilityStatusStore === AvailabilityStatus.SOUND_BLOCKED ||
             $availabilityStatusStore === AvailabilityStatus.DO_NOT_DISTURB ||
             $silentStore,

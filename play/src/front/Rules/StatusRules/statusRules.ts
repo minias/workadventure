@@ -8,4 +8,6 @@ export type TimedRules = {
 export type RequestedStatus =
     | AvailabilityStatus.DO_NOT_DISTURB
     | AvailabilityStatus.BACK_IN_A_MOMENT
+    | AvailabilityStatus.EATING
+    | AvailabilityStatus.ON_THE_PHONE
     | AvailabilityStatus.BUSY;

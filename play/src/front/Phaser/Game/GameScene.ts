@@ -3116,6 +3116,12 @@ ${escapedMessage}
                     case "BACK_IN_A_MOMENT":
                         resetAllStatusStoreExcept(AvailabilityStatus.BACK_IN_A_MOMENT);
                         break;
+                    case "EATING":
+                        resetAllStatusStoreExcept(AvailabilityStatus.EATING);
+                        break;
+                    case "ON_THE_PHONE":
+                        resetAllStatusStoreExcept(AvailabilityStatus.ON_THE_PHONE);
+                        break;
                     default: {
                         // Exhaustive check: if a new status is added, TypeScript will error here
                         const _exhaustiveCheck: never = statusValue;

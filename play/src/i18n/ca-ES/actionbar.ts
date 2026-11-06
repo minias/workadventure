@@ -58,6 +58,8 @@ const actionbar: DeepPartial<Translation["actionbar"]> = {
         ONLINE: "En línia",
         AWAY: "Absent",
         BACK_IN_A_MOMENT: "Torno en un moment",
+        EATING: "Menjant",
+        ON_THE_PHONE: "Al telèfon",
         DO_NOT_DISTURB: "No molestar",
         BUSY: "Ocupat",
         OFFLINE: "Desconnectat",

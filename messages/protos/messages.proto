@@ -25,6 +25,10 @@ enum AvailabilityStatus {
   // gesture. Unlike BACK_IN_A_MOMENT, which the user picks, this one is imposed and
   // clears on the next click.
   SOUND_BLOCKED = 13;
+  // Fork-specific user-requested statuses. Numbered far from upstream's range so a
+  // future upstream status (14, 15, ...) never collides with them.
+  EATING = 100;
+  ON_THE_PHONE = 101;
 }
 
 message PositionMessage {

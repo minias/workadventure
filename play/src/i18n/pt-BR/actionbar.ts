@@ -62,6 +62,8 @@ const actionbar: BaseTranslation = {
         ONLINE: "Online",
         AWAY: "Ausente",
         BACK_IN_A_MOMENT: "Volto em instantes",
+        EATING: "Comendo",
+        ON_THE_PHONE: "Ao telefone",
         DO_NOT_DISTURB: "Não perturbe",
         BUSY: "Ocupado",
         OFFLINE: "Offline",
