@@ -37,7 +37,7 @@ export default {
         next: "다음",
     },
     pictureInPicture: {
-        title: "Picture in Picture",
+        title: "PIP 모드(화면 속 화면)",
         description:
             "Picture in Picture 모드를 사용하여 맵을 탐색하는 동안 화상 통화를 계속 볼 수 있습니다. 멀티태스킹에 좋습니다!",
         video: "./static/Videos/PictureInPicture.mp4",
