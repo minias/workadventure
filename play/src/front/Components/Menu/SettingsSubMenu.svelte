@@ -340,7 +340,7 @@
                         <!-- svelte-ignore a11y_click_events_have_key_events -->
                         <!-- svelte-ignore a11y_no_static_element_interactions -->
                         <span
-                            class="absolute -bottom-4 cursor-pointer"
+                            class="absolute -bottom-4 cursor-pointer whitespace-nowrap"
                             onclick={(event) => {
                                 event.preventDefault();
                                 valueVideoQuality = 1;
@@ -356,7 +356,7 @@
                         <!-- svelte-ignore a11y_click_events_have_key_events -->
                         <!-- svelte-ignore a11y_no_static_element_interactions -->
                         <span
-                            class="absolute -bottom-4 cursor-pointer"
+                            class="absolute -bottom-4 cursor-pointer whitespace-nowrap"
                             onclick={(event) => {
                                 event.preventDefault();
                                 valueVideoQuality = 2;
@@ -372,7 +372,7 @@
                         <!-- svelte-ignore a11y_click_events_have_key_events -->
                         <!-- svelte-ignore a11y_no_static_element_interactions -->
                         <span
-                            class="absolute -bottom-4 cursor-pointer"
+                            class="absolute -bottom-4 cursor-pointer whitespace-nowrap"
                             onclick={(event) => {
                                 event.preventDefault();
                                 valueVideoQuality = 3;
@@ -409,7 +409,7 @@
                         <!-- svelte-ignore a11y_click_events_have_key_events -->
                         <!-- svelte-ignore a11y_no_static_element_interactions -->
                         <span
-                            class="absolute -bottom-4 cursor-pointer"
+                            class="absolute -bottom-4 cursor-pointer whitespace-nowrap"
                             onclick={(event) => {
                                 event.preventDefault();
                                 valueScreenShareQuality = 1;
@@ -425,7 +425,7 @@
                         <!-- svelte-ignore a11y_click_events_have_key_events -->
                         <!-- svelte-ignore a11y_no_static_element_interactions -->
                         <span
-                            class="absolute -bottom-4 cursor-pointer"
+                            class="absolute -bottom-4 cursor-pointer whitespace-nowrap"
                             onclick={(event) => {
                                 event.preventDefault();
                                 valueScreenShareQuality = 2;
@@ -441,7 +441,7 @@
                         <!-- svelte-ignore a11y_click_events_have_key_events -->
                         <!-- svelte-ignore a11y_no_static_element_interactions -->
                         <span
-                            class="absolute -bottom-4 cursor-pointer"
+                            class="absolute -bottom-4 cursor-pointer whitespace-nowrap"
                             onclick={(event) => {
                                 event.preventDefault();
                                 valueScreenShareQuality = 3;
