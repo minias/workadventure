@@ -78,6 +78,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'Wanneer je naar een ander venster of tabblad gaat, schakelt WorkAdventure over naar de "afwezigheidsmodus", behalve tijdens een gesprek of een uitzending.',
             cameraToggle: 'Houd camera actief in "afwezigheidsmodus"',
             microphoneToggle: 'Houd microfoon actief in "afwezigheidsmodus"',
+            awayStatusToggle: "Status Afwezig tonen in de afwezigheidsmodus",
         },
         save: "Opslaan",
         otherSettings: "Andere instellingen",

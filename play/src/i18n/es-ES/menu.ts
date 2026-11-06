@@ -79,6 +79,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'Al cambiar a otra ventana o pestaña, WorkAdventure pasa a "modo no presente", salvo durante una conversación o una transmisión.',
             cameraToggle: 'Mantener la cámara activa en "modo no presente"',
             microphoneToggle: 'Mantener el micrófono activa en "modo no presente"',
+            awayStatusToggle: "Mostrar el estado Ausente en el modo ausente",
         },
         save: "Guardar",
         otherSettings: "Otras configuraciones",

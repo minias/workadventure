@@ -32,6 +32,7 @@ import { WebviewOnOldIOS } from "./Errors/WebviewOnOldIOS";
 
 import { createSilentStore } from "./SilentStore";
 import { privacyShutdownStore } from "./PrivacyShutdownStore";
+import { awayStatusOnBlurStore } from "./AwayStatusOnBlurStore";
 import { inExternalServiceStore, myCameraStore, myMicrophoneStore, proximityMeetingStore } from "./MyMediaStore";
 import { userMovingStore } from "./GameStore";
 import { hideHelpCameraSettings } from "./HelpSettingsStore";
@@ -441,6 +442,7 @@ export const availabilityStatusStore = derived(
         isListenerStore,
         audioPlaybackStore,
         browserNotificationStore,
+        awayStatusOnBlurStore,
     ],
     ([
         $inJitsiStore,
@@ -454,6 +456,7 @@ export const availabilityStatusStore = derived(
         $isListenerStore,
         $audioPlaybackStore,
         $browserNotificationStore,
+        $awayStatusOnBlurStore,
     ]) => {
         // Important: Statuses that should not switch to BUSY
         // must be checked BEFORE privacyShutdownStore to prevent switching to BUSY when privacy is enabled.
@@ -466,7 +469,7 @@ export const availabilityStatusStore = derived(
         if ($inLivekitStore) return AvailabilityStatus.LIVEKIT;
         if ($isListenerStore) return AvailabilityStatus.LISTENER;
         if ($requestedStatusStore) return $requestedStatusStore;
-        if ($privacyShutdownStore) return AvailabilityStatus.AWAY;
+        if ($privacyShutdownStore && $awayStatusOnBlurStore) return AvailabilityStatus.AWAY;
 
         return AvailabilityStatus.ONLINE;
     },

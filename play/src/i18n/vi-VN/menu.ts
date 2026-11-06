@@ -77,6 +77,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'Khi bạn chuyển sang cửa sổ hoặc thẻ khác, WorkAdventure chuyển sang "chế độ vắng mặt", trừ khi đang trò chuyện hoặc phát sóng.',
             cameraToggle: 'Giữ camera hoạt động trong "chế độ vắng mặt"',
             microphoneToggle: 'Giữ micrô hoạt động trong "chế độ vắng mặt"',
+            awayStatusToggle: "Hiển thị trạng thái Vắng mặt ở chế độ vắng mặt",
         },
         save: "Lưu",
         otherSettings: "Cài đặt khác",

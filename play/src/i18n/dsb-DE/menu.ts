@@ -78,6 +78,7 @@ const menu: DeepPartial<Translation["menu"]> = {
                 'Gaž do drugego wokna abo tabu pśejźośo, aktiwěrujo se "modus njepśibytnosći", nic pak w rozgronje abo pśi wusyłanju.',
             cameraToggle: 'Kameru we "modusu njepśibytnosći" aktiwěrowanu wóstajiś.',
             microphoneToggle: 'Mikrofon we "modusu njepśibytnosći" aktiwěrowany wóstajiś.',
+            awayStatusToggle: 'Show the "Away" status in "away mode"',
         },
         save: "Zachowaś",
         otherSettings: "Druge nastajenja",
