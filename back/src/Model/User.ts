@@ -194,6 +194,8 @@ export class User implements Movable, CustomJsonReplacerInterface {
             this.availabilityStatus === AvailabilityStatus.SPEAKER ||
             this.availabilityStatus === AvailabilityStatus.DO_NOT_DISTURB ||
             this.availabilityStatus === AvailabilityStatus.BACK_IN_A_MOMENT ||
+            this.availabilityStatus === AvailabilityStatus.EATING ||
+            this.availabilityStatus === AvailabilityStatus.ON_THE_PHONE ||
             this.availabilityStatus === AvailabilityStatus.LIVEKIT ||
             this.availabilityStatus === AvailabilityStatus.LISTENER ||
             this.availabilityStatus === AvailabilityStatus.SOUND_BLOCKED

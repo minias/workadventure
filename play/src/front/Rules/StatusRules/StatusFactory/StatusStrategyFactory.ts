@@ -5,6 +5,8 @@ import { BackInAMomentStatusStrategy } from "../StatusStrategy/BackInAMomentStat
 import { BasicStatusStrategy } from "../StatusStrategy/BasicStatusStrategy";
 import type { StatusStrategyFactoryInterface } from "../StatusChanger";
 import { DoNotDisturbStatusStrategy } from "../StatusStrategy/DoNotDisturbStatusStrategy";
+import { EatingStatusStrategy } from "../StatusStrategy/EatingStatusStrategy";
+import { OnThePhoneStatusStrategy } from "../StatusStrategy/OnThePhoneStatusStrategy";
 
 export const StatusStrategyFactory: StatusStrategyFactoryInterface = {
     createStrategy(newStatus: AvailabilityStatus): StatusStrategyInterface {
@@ -15,6 +17,10 @@ export const StatusStrategyFactory: StatusStrategyFactoryInterface = {
                 return new DoNotDisturbStatusStrategy();
             case AvailabilityStatus.BACK_IN_A_MOMENT:
                 return new BackInAMomentStatusStrategy();
+            case AvailabilityStatus.EATING:
+                return new EatingStatusStrategy();
+            case AvailabilityStatus.ON_THE_PHONE:
+                return new OnThePhoneStatusStrategy();
             default:
                 return new BasicStatusStrategy(newStatus);
         }

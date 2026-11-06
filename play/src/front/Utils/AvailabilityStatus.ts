@@ -21,6 +21,8 @@ const COLORS: Record<AvailabilityStatus, { filling: number; outline: number }> =
     [AvailabilityStatus.LIVEKIT]: { filling: 0x68e97a, outline: 0x44d45a },
     [AvailabilityStatus.LISTENER]: { filling: 0x68e97a, outline: 0x44d45a },
     [AvailabilityStatus.SOUND_BLOCKED]: { filling: 0x7382e2, outline: 0x4156f6 },
+    [AvailabilityStatus.EATING]: { filling: 0xf0a04b, outline: 0xd9822b },
+    [AvailabilityStatus.ON_THE_PHONE]: { filling: 0xa77de9, outline: 0x7e4fd1 },
 };
 
 // A peer running an older build sends statuses this one has no colour for, and the
@@ -46,6 +48,8 @@ export const getStatusInformation = (
 ): Array<StatusInformationInterface> => {
     const labelStatusMap: Map<RequestedStatus | AvailabilityStatus.ONLINE, LocalizedString> = new Map([
         [AvailabilityStatus.BACK_IN_A_MOMENT, get(LL).actionbar.status.BACK_IN_A_MOMENT()],
+        [AvailabilityStatus.EATING, get(LL).actionbar.status.EATING()],
+        [AvailabilityStatus.ON_THE_PHONE, get(LL).actionbar.status.ON_THE_PHONE()],
         [AvailabilityStatus.BUSY, get(LL).actionbar.status.BUSY()],
         [AvailabilityStatus.DO_NOT_DISTURB, get(LL).actionbar.status.DO_NOT_DISTURB()],
         [AvailabilityStatus.ONLINE, get(LL).actionbar.status.ONLINE()],

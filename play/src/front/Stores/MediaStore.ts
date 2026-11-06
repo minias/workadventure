@@ -583,6 +583,8 @@ export const mediaStreamConstraintsStore = derived(
             $availabilityStatusStore === AvailabilityStatus.SILENT ||
             $availabilityStatusStore === AvailabilityStatus.DO_NOT_DISTURB ||
             $availabilityStatusStore === AvailabilityStatus.BACK_IN_A_MOMENT ||
+            $availabilityStatusStore === AvailabilityStatus.EATING ||
+            $availabilityStatusStore === AvailabilityStatus.ON_THE_PHONE ||
             $availabilityStatusStore === AvailabilityStatus.SOUND_BLOCKED ||
             $availabilityStatusStore === AvailabilityStatus.BUSY;
         const shouldDisableMicrophoneForPrivacy =
@@ -1358,6 +1360,8 @@ export const localStreamStoreForPublishing = derived<
             $availabilityStatusStore === AvailabilityStatus.SILENT ||
             $availabilityStatusStore === AvailabilityStatus.DO_NOT_DISTURB ||
             $availabilityStatusStore === AvailabilityStatus.BACK_IN_A_MOMENT ||
+            $availabilityStatusStore === AvailabilityStatus.EATING ||
+            $availabilityStatusStore === AvailabilityStatus.ON_THE_PHONE ||
             $availabilityStatusStore === AvailabilityStatus.SOUND_BLOCKED ||
             $availabilityStatusStore === AvailabilityStatus.BUSY;
         const shouldMaskVideoForPublishing = isUnavailableStatus && $inBackgroundSettingsStore;

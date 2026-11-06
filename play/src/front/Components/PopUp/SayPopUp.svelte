@@ -44,6 +44,8 @@
             case AvailabilityStatus.AWAY:
             case AvailabilityStatus.DO_NOT_DISTURB:
             case AvailabilityStatus.BACK_IN_A_MOMENT:
+            case AvailabilityStatus.EATING:
+            case AvailabilityStatus.ON_THE_PHONE:
             case AvailabilityStatus.SOUND_BLOCKED:
             case AvailabilityStatus.BUSY: {
                 type = "think";

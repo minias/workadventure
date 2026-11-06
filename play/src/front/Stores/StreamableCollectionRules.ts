@@ -39,6 +39,8 @@ export function shouldDisplayLocalCameraPeer({
         availabilityStatus === AvailabilityStatus.SILENT ||
         availabilityStatus === AvailabilityStatus.DO_NOT_DISTURB ||
         availabilityStatus === AvailabilityStatus.BACK_IN_A_MOMENT ||
+        availabilityStatus === AvailabilityStatus.EATING ||
+        availabilityStatus === AvailabilityStatus.ON_THE_PHONE ||
         availabilityStatus === AvailabilityStatus.SOUND_BLOCKED ||
         availabilityStatus === AvailabilityStatus.BUSY;
 
